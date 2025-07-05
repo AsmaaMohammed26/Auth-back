@@ -27,9 +27,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/v1/users', userRoute);
 app.use('/api/v1/auth', authRoute);
 
+// ✅ Root route
+app.get('/', (req, res) => {
+  res.send('Welcome to the API. Use /api/v1/auth or /api/v1/users.');
+});
+
 // Error Middleware
 app.use(errorMW);
 
-// ✅ Vercel will use this exported app
+// Export for Vercel
 module.exports = app;
-
