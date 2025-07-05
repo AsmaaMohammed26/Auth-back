@@ -2,5 +2,7 @@
   "version": 2,
   "name": "myapp",
   "builds": [{ "src": "app.js", "use": "@vercel/node" }],
-  "routes": [{ "handle": "filesystem" }]
+  "routes": [
+    { "src": "/(.*)", "dest": "app.js" }
+  ]
 }
