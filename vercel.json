@@ -2,13 +2,5 @@
   "version": 2,
   "name": "myapp",
   "builds": [{ "src": "app.js", "use": "@vercel/node" }],
-  "routes": [{ "handle": "filesystem" }],
-
-  "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vercel dev",
-    "build": "vercel build",
-    "deploy": "vercel deploy"
-  }
+  "routes": [{ "handle": "filesystem" }]
 }
