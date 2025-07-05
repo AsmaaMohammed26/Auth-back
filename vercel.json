@@ -3,7 +3,7 @@
   "name": "myapp",
   "builds": [{ "src": "app.js", "use": "@vercel/node" }],
   "routes": [{ "handle": "filesystem" }],
-  "engines": { "node": "16.x" },
+
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
