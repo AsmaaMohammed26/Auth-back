@@ -29,7 +29,7 @@ app.use('/api/v1/auth', authRoute);
 
 // ✅ Root route
 app.get('/', (req, res) => {
-  res.send('Welcome to the API. Use /api/v1/auth or /api/v1/users.');
+  res.send('Welcome to the API');
 });
 
 // Error Middleware
